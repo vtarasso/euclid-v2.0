@@ -156,7 +156,6 @@ img {
 /* hero */
 .hero__slider {
   position: relative;
-  height: 620px;
   overflow: hidden;
 }
 
@@ -209,10 +208,11 @@ img {
   /* hero-swiper-end */
 .hero__content {
   position: relative;
-  top: 102px;
-  left: 80px;
-  width: 53%;
+  top: 0;
+  padding: 102px 80px;
+  width: 55%;
   color: var(--light-color);
+  pointer-events: none;
   z-index: 2;
 }
 
@@ -233,4 +233,5 @@ img {
 .hero__btn {
   padding: 25px 40px;
   font-size: 23px;
+  pointer-events: all;
 }
