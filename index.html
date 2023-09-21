@@ -1,61 +1,74 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Евклид - проектные решения любой сложности</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="container header__container">
-            <a  class="logo header__logo" href="#">
-                <img src="images/logo.svg" alt="Логотип фирмы Евклид">
-            </a>
-            <nav class="nav header__nav">
-                <ul class="list-reset nav__list header__items">
-                    <li class="nav__item header__item">
-                        <a href="#about" class="nav__link header__link">О&nbsp;нас</a>
-                    </li>
-                    <li class="nav__item header__item">
-                        <a href="#" class="nav__link header__link">Проекты</a>
-                    </li>
-                    <li class="nav__item header__item">
-                        <a href="#stages" class="nav__link header__link">Этапы</a>
-                    </li>
-                    <li class="nav__item header__item">
-                        <a href="#" class="nav__link header__link">Отзывы</a>
-                    </li>
-                    <li class="nav__item header__item">
-                        <a href="#footer" class="nav__link header__link">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="btn-reset btn header__btn" aria-label="Поиск">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g id="search">
-                <rect id="Rectangle 3" width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="#333333"/>
-                <path id="Ellipse 1" d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="#333333" stroke-width="2"/>
-                </g>
-              </svg>
-            </button>
-        </div>
+      <div class="container header__container flex">
+        <a  class="logo header__logo" href="#">
+          <img src="images/logo.svg" alt="Логотип фирмы Евклид">
+        </a>
+        <nav class="nav header__nav">
+          <ul class="list-reset nav__list header__items flex">
+            <li class="nav__item header__item">
+              <a href="#about" class="nav__link header__link">О&nbsp;нас</a>
+            </li>
+            <li class="nav__item header__item">
+              <a href="#" class="nav__link header__link">Проекты</a>
+            </li>
+            <li class="nav__item header__item">
+              <a href="#stages" class="nav__link header__link">Этапы</a>
+            </li>
+            <li class="nav__item header__item">
+              <a href="#" class="nav__link header__link">Отзывы</a>
+            </li>
+            <li class="nav__item header__item">
+              <a href="#footer" class="nav__link header__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="btn-reset header__btn" aria-label="Поиск">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="search">
+            <rect id="rectangle3" width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="#333333"/>
+            <path id="ellipse1" d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="#333333" stroke-width="2"/>
+            </g>
+          </svg>
+        </button>
+      </div>
     </header>
 
     <main class="main">
       <section class="hero">
         <div class="container hero__container">
-          <div class="hero__content">
-            <h1 class="hero__title">
-              Проектные решения любой сложности
-            </h1>
-            <p class="hero__descr">
-              Есть над чем задуматься: базовые сценарии поведения пользователей и&nbsp;по&nbsp;сей день остаются уделом проектантов
-            </p>
+          <div class="hero__slider">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide-1"></div>
+                <div class="swiper-slide swiper-slide-2"></div>
+                <div class="swiper-slide swiper-slide-3"></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
 
-            <button class="btn-reset btn hero__btn">
-              Заказать расчёт
-            </button>
+            <div class="hero__content">
+              <h1 class="hero__title">
+                Проектные решения любой сложности
+              </h1>
+              <p class="hero__descr">
+                Есть над чем задуматься: базовые сценарии поведения пользователей и&nbsp;по&nbsp;сей день остаются уделом проектантов
+              </p>
+
+              <button class="btn-reset btn hero__btn">
+                Заказать расчёт
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -290,5 +303,7 @@
         </div>
       </div>
     </footer>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="scripts/swiper.js"></script>
+  </body>
 </html>
