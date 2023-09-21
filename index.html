@@ -123,22 +123,22 @@
             Как мы&nbsp;работаем
           </h2>
 
-          <ul class="list-reset stages__items">
+          <ul class="list-reset stages__items flex">
             <li class="stages__item">
-              <button class="btn-reset stages__tabs" aria-label="Шаг первый">1&nbsp;шаг</button>
+              <button class="btn-reset stages__tabs stages__tabs--active" data-path="one" aria-label="Шаг первый">1&nbsp;шаг</button>
             </li>
             <li class="stages__item">
-              <button class="btn-reset stages__tabs" aria-label="Шаг второй">2&nbsp;шаг</button>
+              <button class="btn-reset stages__tabs" data-path="two" aria-label="Шаг второй">2&nbsp;шаг</button>
             </li>
             <li class="stages__item">
-              <button class="btn-reset stages__tabs" aria-label="Шаг третий">3&nbsp;шаг</button>
+              <button class="btn-reset stages__tabs" data-path="three" aria-label="Шаг третий">3&nbsp;шаг</button>
             </li>
             <li class="stages__item">
-              <button class="btn-reset stages__tabs" aria-label="Шаг четвёртый">4&nbsp;шаг</button>
+              <button class="btn-reset stages__tabs" data-path="four" aria-label="Шаг четвёртый">4&nbsp;шаг</button>
             </li>
           </ul>
 
-          <div class="stages__wrapper stages__active">
+          <div class="stages__content stages__content--active"  data-target="one">
             <div class="stages__info">
               <h3 class="section-subtitle stages__subtitle">
                 Проводим консультацию
@@ -151,7 +151,55 @@
                 <button class="btn-reset stages__btn stages__btn--transparent">Договор</button>
               </div>
             </div>
-            <div class="stages__picture"></div>
+            <div class="stages__picture tab-1"></div>
+          </div>
+
+          <div class="stages__content"  data-target="two">
+            <div class="stages__info">
+              <h3 class="section-subtitle stages__subtitle">
+                Составляем смету
+              </h3>
+              <p class="stages__descr">
+                Внедрения и&nbsp;модернизации приоритизации разума над эмоциями. В&nbsp;рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А&nbsp;также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с&nbsp;зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.
+              </p>
+              <div class="stages__buttons">
+                <button class="btn-reset btn stages__btn">Подробнее</button>
+                <button class="btn-reset stages__btn stages__btn--transparent">Договор</button>
+              </div>
+            </div>
+            <div class="stages__picture tab-2"></div>
+          </div>
+
+          <div class="stages__content"  data-target="three">
+            <div class="stages__info">
+              <h3 class="section-subtitle stages__subtitle">
+                Привлекаем подрядчиков
+              </h3>
+              <p class="stages__descr">
+                Идейные соображения высшего порядка, а&nbsp;также новая модель организационной деятельности требует анализа прогресса профессионального сообщества. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от&nbsp;дальнейших направлений развития. Разнообразный и&nbsp;богатый опыт говорит нам, что новая модель организационной деятельности говорит о&nbsp;возможностях системы массового участия. Принимая во&nbsp;внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные задания по&nbsp;разработке прогресса профессионального сообщества.
+              </p>
+              <div class="stages__buttons">
+                <button class="btn-reset btn stages__btn">Подробнее</button>
+                <button class="btn-reset stages__btn stages__btn--transparent">Договор</button>
+              </div>
+            </div>
+            <div class="stages__picture tab-3"></div>
+          </div>
+
+          <div class="stages__content"  data-target="four">
+            <div class="stages__info">
+              <h3 class="section-subtitle stages__subtitle">
+                Инспектируем все этапы работ
+              </h3>
+              <p class="stages__descr">
+                Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от&nbsp;дальнейших направлений развития. Разнообразный и&nbsp;богатый опыт говорит нам, что новая модель организационной деятельности говорит о&nbsp;возможностях системы массового участия. Принимая во&nbsp;внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет.
+              </p>
+              <div class="stages__buttons">
+                <button class="btn-reset btn stages__btn">Подробнее</button>
+                <button class="btn-reset stages__btn stages__btn--transparent">Договор</button>
+              </div>
+            </div>
+            <div class="stages__picture tab-4"></div>
           </div>
         </div>
       </section>
@@ -306,5 +354,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="scripts/swiper.js"></script>
+    <script src="scripts/tabs.js"></script>
   </body>
 </html>
