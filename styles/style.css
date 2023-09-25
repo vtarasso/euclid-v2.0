@@ -111,7 +111,22 @@ img {
   font-weight: 700;
   color: var(--light-color);
   background-color: var(--main-orange);
+  transition: background-color 0.3s ease-in-out;
 }
+
+.btn:focus-visible {
+  outline: none;
+  background-color: rgba(255, 153, 0, 0.70);
+}
+
+.btn:hover {
+  background-color: rgba(255, 153, 0, 0.70);
+}
+
+.btn:active {
+  background-color: var(--active-color);
+}
+
 
 .section-title {
   margin: 0;
@@ -458,6 +473,27 @@ img {
   background-repeat: no-repeat;
 }
 
+.card__btn {
+  background-color: transparent;
+  border: 3px solid var(--main-orange);
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.card__btn:focus-visible {
+  background-color: var(--main-orange);
+  border-color: var(--main-orange);
+}
+
+.card__btn:hover {
+  border-color: var(--main-orange);
+  background-color: var(--main-orange);
+}
+
+.card__btn:active {
+  background-color: var(--active-color);
+  border-color: var(--active-color) ;
+}
+
 .card__content--box {
   background-image: url("../images/card-box.svg");
 }
@@ -498,6 +534,21 @@ img {
   font-size: 1.8rem;
 }
 
+.stages__tabs:focus-visible {
+  outline: 2px solid var(--main-orange);
+  outline-offset: 3px;
+}
+
+.stages__tabs:hover {
+  color: var(--main-orange);
+  transition: color 0.3s ease-in-out;
+}
+
+.stages__tabs:active {
+  color: var(--active-color);
+  transition: color 0.3s ease-in-out;
+}
+
 .stages__content {
   display: none;
   --offsets: 1;
@@ -531,6 +582,28 @@ img {
 .stages__btn--transparent {
   padding: 19px 38px;
   border: 1px solid var(--text-color);
+}
+
+.stages__btn--transparent:focus-visible {
+  outline: none;
+  color: var(--light-color);
+  background-color: #666666;
+  border-color: #666666;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.stages__btn--transparent:hover {
+  color: var(--light-color);
+  background-color: #666666;
+  border-color: #666666;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.stages__btn--transparent:active {
+  color: var(--light-color);
+  background-color: #000000;
+  border-color: #000000;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .stages__picture {
