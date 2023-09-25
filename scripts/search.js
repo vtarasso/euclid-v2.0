@@ -16,5 +16,11 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
   document.getElementById('search-close').addEventListener('click', (e) => {
     document.getElementById('search-form').classList.remove('search-form_show')
+    setTimeout(clear, 1000)
   })
 })
+
+//clear input value
+function clear() {
+  document.getElementById('search-form__input').value = '';
+}

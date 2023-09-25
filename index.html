@@ -45,7 +45,7 @@
 
         <form class="search-form flex" id="search-form" action="https://jsonplaceholder.typicode.com/posts" method="post">
           <label>
-            <input class="search-form__input" name="search-request" type="text" placeholder="Что будем искать?">
+            <input class="search-form__input" id="search-form__input" name="search-request" type="text" placeholder="Что будем искать?">
           </label>
 
           <button class="btn-reset search-form__send" id="search-form-send" type="submit" aria-label="Найти">
@@ -97,9 +97,9 @@
         </div>
       </section>
 
-      <section class="about" id="about">
+      <section class="about">
         <div class="container about__container">
-          <h2 class="section-title about__title">
+          <h2 class="section-title about__title" id="about">
             О&nbsp;нас
           </h2>
 
@@ -335,7 +335,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container footer__container flex">
         <div class="footer__left flex">
           <a class="logo footer__logo" href="#">
