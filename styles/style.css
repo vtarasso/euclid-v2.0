@@ -137,6 +137,7 @@ img {
 }
 
 .header__container  {
+  position: relative;
   align-items: center;
 }
 
@@ -157,6 +158,161 @@ img {
   font-size: 1.8rem;
   font-weight: 600;
 }
+
+.nav__link {
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav__link:focus-visible {
+  outline: 2px solid var(--main-orange);
+  outline-offset: 3px;
+}
+
+.nav__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--main-orange);
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in;
+}
+
+.nav__link:hover::after {
+  transform: scaleX(1);
+}
+
+.nav__link:active {
+  outline: none;
+  color: var(--active-color);
+}
+
+.nav__link:active::after {
+  background-color: var(--active-color);
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+.header__btn:focus-visible {
+  outline: 2px solid var(--main-orange);
+  outline-offset: 3px;
+}
+
+.header__btn:hover rect {
+  fill: var(--main-orange);
+  transition: fill 0.3s ease-in-out;
+}
+
+.header__btn:hover path {
+  stroke: var(--main-orange);
+  transition: stroke 0.3s ease-in-out;
+}
+
+.header__btn:active {
+  outline: none;
+}
+
+.search-form {
+  padding: 16px 18px;
+  position: absolute;
+  right: 0;
+  align-items: center;
+  background-color: var(--light-color);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.search-form_show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.search-form__input {
+  margin-right: 14px;
+  width: 412px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #adadad;
+  border: none;
+  border-radius: none;
+  border-bottom: 2px solid #dcdcdc;
+}
+
+.search-form__input::placeholder {
+  color: #adadad;
+}
+
+.search-form__input:focus-visible {
+  outline: none;
+  border-color: var(--main-orange);
+  transition: border-color  0.3s ease-in-out;
+}
+
+.form-icon {
+  vertical-align: middle;
+}
+
+.search-form__send {
+  margin-right: 20px;
+}
+
+.search-form__send:focus-visible,
+.search-form__close:focus-visible {
+  outline: 2px solid var(--main-orange);
+  outline-offset: 2px;
+}
+
+.search-form__send:hover rect {
+  fill: var(--main-orange);
+  transition: fill 0.3s ease-in-out;
+}
+
+.search-form__send:hover path {
+  stroke: var(--main-orange);
+  transition: stroke 0.3s ease-in-out;
+}
+
+.search-form__close:hover rect {
+  fill: var(--main-orange);
+  transition: fill 0.3s ease-in-out;
+}
+
+.search-form__close:hover circle {
+  stroke: var(--main-orange);
+  transition: stroke 0.3s ease-in-out;
+}
+
+.search-form__send:active,
+.search-form__close:active {
+  outline: none;
+}
+
+.search-form__send:active rect {
+  fill: var(--text-color);
+  transition: fill 0.3s ease-in-out;
+}
+
+.search-form__send:active path {
+  stroke: var(--text-color);
+  transition: stroke 0.3s ease-in-out;
+}
+
+.search-form__close:active rect {
+  fill: var(--text-color);
+  transition: fill 0.3s ease-in-out;
+}
+
+.search-form__close:active circle {
+  stroke: var(--text-color);
+  transition: stroke 0.3s ease-in-out;
+}
+
 
 /* hero */
 .hero__slider {
@@ -635,7 +791,7 @@ img {
   opacity: 1;
 }
 
-.custom-checkbox__input:focus + .custom-checkbox__text {
+.custom-checkbox__input:focus-visible + .custom-checkbox__text {
   outline: 1px solid var(--main-orange);
   outline-offset: 3px;
 }

@@ -34,14 +34,37 @@
             </li>
           </ul>
         </nav>
-        <button class="btn-reset header__btn" aria-label="Поиск">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g id="search">
-            <rect id="rectangle3" width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="#333333"/>
-            <path id="ellipse1" d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="#333333" stroke-width="2"/>
+        <button class="btn-reset header__btn search-open" id="search-open" aria-label="Открыть окно поиска">
+          <svg class="form-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g>
+            <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="#333333"/>
+            <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="#333333" stroke-width="2"/>
             </g>
           </svg>
         </button>
+
+        <form class="search-form flex" id="search-form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+          <label>
+            <input class="search-form__input" name="search-request" type="text" placeholder="Что будем искать?">
+          </label>
+
+          <button class="btn-reset search-form__send" id="search-form-send" type="submit" aria-label="Найти">
+            <svg class="form-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g>
+              <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="#999999"/>
+              <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="#999999" stroke-width="2"/>
+              </g>
+            </svg>
+          </button>
+
+          <button class="btn-reset search-form__close" id="search-close" type="button" aria-label="Закрыть окно поиска">
+            <svg  class="form-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8.95386" y="7.30435" width="11.6645" height="2.33291" transform="rotate(45 8.95386 7.30435)" fill="#999999"/>
+              <rect x="7.30432" y="15.5524" width="11.6645" height="2.33291" transform="rotate(-45 7.30432 15.5524)" fill="#999999"/>
+              <circle cx="12" cy="12" r="11" stroke="#999999" stroke-width="2"/>
+            </svg>
+          </button>
+        </form>
       </div>
     </header>
 
@@ -426,6 +449,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+    <script src="scripts/search.js"></script>
     <script src="scripts/swiper.js"></script>
     <script src="scripts/tabs.js"></script>
     <script>
