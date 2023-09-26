@@ -662,16 +662,44 @@ img {
   border-top-color: var(--light-grey);
 }
 
-.questions__item:hover {
-  border-top-color: var(--main-orange);
-  border-bottom-color: var(--main-orange);
-
-  transition: border-color 0.3s ease-in-out;
-}
 
 .questions__mark {
   color: var(--light-grey);
   transition: color 0.3s ease-in-out;
+}
+
+.questions__item:focus-visible {
+  outline: none;
+}
+
+.questions__item:focus-visible {
+  border-top-color: var(--main-orange);
+  border-bottom-color: var(--main-orange);
+  transition: border-color 0.3s ease-in-out;
+}
+
+.questions__item:focus-visible  .questions__subtitle{
+  color: var(--main-orange);
+}
+
+.questions__item:focus-visible  .questions__subtitle .questions__mark{
+  color: var(--main-orange);
+}
+
+.questions__item:focus-visible  .questions__subtitle .questions__icon ellipse {
+  fill: var(--main-orange);
+  transition: fill 0.3s ease-in-out;
+}
+
+.questions__item:focus-visible  .questions__subtitle .questions__icon path {
+  fill: var(--light-color);
+  transition: fill 0.3s ease-in-out;
+}
+
+.questions__item:hover {
+  border-top-color: var(--main-orange);
+  border-bottom-color: var(--main-orange);
+  transition: border-color 0.3s ease-in-out;
 }
 
 .questions__item:hover  .questions__subtitle{
