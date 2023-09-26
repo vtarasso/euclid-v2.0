@@ -269,7 +269,7 @@ img {
   transition: border-color  0.3s ease-in-out;
 }
 
-.form-icon {
+.icon {
   vertical-align: middle;
 }
 
@@ -802,8 +802,43 @@ img {
   line-height: 2;
 }
 
+.footer__link:focus-visible {
+  outline: 2px solid var(--main-orange);
+  outline-offset: 3px;
+}
+
+.footer__link:hover {
+  color: var(--main-orange);
+  transition: color 0.3s ease-in-out;
+}
+
+.footer__link:active {
+  outline: none;
+  color: var(--active-color);
+  transition: color 0.3s ease-in-out;
+}
+
 .social {
   gap: 25px;
+}
+
+.social__link:focus-visible {
+  outline: 2px solid var(--main-orange);
+  outline-offset: 3px;
+}
+
+.social__link:hover path {
+  fill: var(--main-orange);
+  transition: fill 0.3s ease-in-out;
+}
+
+.social__link:active {
+  outline: none;
+}
+
+.social__link:active path {
+  fill: var(--active-color);
+  transition: fill 0.3s ease-in-out;
 }
 
 .footer__middle {
@@ -823,10 +858,21 @@ img {
   margin-bottom: 25px;
   padding: 21px 24px 21px;
   width: 100%;
+  color: var(--light-color);
   background-color: var(--dark-grey);
   transition: background-color .3s ease-in-out;
   border: none;
 }
+
+.form__input:focus {
+  outline: none;
+  background-color: #666666;
+}
+
+.form__input:hover {
+  background-color: #666666;
+}
+
 
 .form__textarea {
   margin-bottom: 0;
