@@ -56,6 +56,7 @@
 html {
   font-size: 10px;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -886,7 +887,6 @@ img {
 .footer__check {
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
   gap: 20px;
 }
 
