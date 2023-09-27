@@ -7,12 +7,19 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles/accordion.min.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media.css">
     <link rel="icon" type="image/png" href="images/favicon.png">
     <title>Евклид - проектные решения любой сложности</title>
   </head>
   <body>
     <header class="header">
       <div class="container header__container flex">
+        <button class="btn-reset header__burger" id="burger">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+
         <a  class="logo header__logo" href="#">
           <img src="images/logo.svg" alt="Логотип фирмы Евклид">
         </a>
@@ -448,11 +455,12 @@
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="scripts/accordion.min.js"></script>
-    <script src="scripts/search.js"></script>
-    <script src="scripts/swiper.js"></script>
-    <script src="scripts/tabs.js"></script>
+    <script defer src="scripts/burger.js"></script>
+    <script defer src="scripts/search.js"></script>
+    <script defer src="scripts/swiper.js"></script>
+    <script defer src="scripts/tabs.js"></script>
     <script>
       new Accordion('.accordion-container');
     </script>

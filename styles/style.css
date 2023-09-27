@@ -156,6 +156,10 @@ img {
   align-items: center;
 }
 
+.header__burger {
+  display: none;
+}
+
 .header__logo {
   margin-right: auto;
 }
@@ -386,7 +390,7 @@ img {
   position: relative;
   top: 0;
   padding: 102px 80px;
-  width: 55%;
+  max-width: 55%;
   color: var(--light-color);
   pointer-events: none;
   z-index: 2;
