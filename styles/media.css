@@ -102,7 +102,6 @@
     z-index: 20;
   }
 
-
   .nav__list {
     flex-direction: column;
     gap: 30px;
@@ -124,6 +123,98 @@
   .header__logo {
     margin-right: 0;
     max-width: 150px;
+  }
+
+  /* hero */
+  .swiper-slide-1 {
+    background-image: url('../images/slider-1-tab.jpg');
+  }
+
+  .hero__content {
+    padding: 163px 77px;
+    min-width: 93%;
+  }
+
+  .hero__title {
+    margin-bottom: 16px;
+    font-size: 6rem;
+  }
+
+  .hero__descr {
+    margin-bottom: 60px;
+    font-size: 2rem;
+  }
+
+  .about {
+    padding: 81px 0;
+  }
+
+  .about__title {
+    margin-bottom: 11px;
+  }
+
+  .about__descr {
+    margin-bottom: 62px;
+    width: 96%;
+  }
+
+  .card__content {
+    padding: 63px 117px 63px 315px;
+    background-position: 76px center;
+  }
+
+  /* stages */
+  .stages {
+    padding-bottom: 83px;
+  }
+
+  .stages__items {
+    margin-bottom: 50px;
+  }
+
+  .stages__content {
+    gap: 50px;
+    min-height: 700px;
+  }
+
+  .stages__info {
+    width: calc((100% - (50px * var(--offsets))) / (var(--offsets) + 1));
+  }
+
+  .stages__picture {
+    width: calc((100% - (50px * var(--offsets))) / (var(--offsets) + 1));
+  }
+
+  /* questions */
+  .questions__title {
+    margin-bottom: 34px;
+  }
+
+  .ac .ac-trigger {
+    font-size: 2rem;
+    line-height: 1.6;
+  }
+
+  .questions {
+    padding-bottom: 93px;
+  }
+
+/* footer */
+  .footer__left {
+    width: 28%;
+  }
+
+  .footer__middle {
+    margin-right: 0;
+    width: 59%;
+  }
+
+  .footer__check {
+    justify-content: flex-start;
+  }
+
+  .footer__btn {
+    padding: 19px 40px;
   }
 
   .footer__right {
