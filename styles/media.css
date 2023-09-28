@@ -563,7 +563,8 @@
   }
 
   .stages__info {
-    min-height: 792px;
+    max-height: 792px;
+    min-height: 435px;
   }
 
   /* questions */
@@ -587,6 +588,11 @@
   .questions__icon {
     width: 30px;
     height: 30px;
+  }
+
+  .questions__descr {
+    max-width: 100%;
+    font-size: 1.2rem;
   }
 
   /* footer */
