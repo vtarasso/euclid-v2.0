@@ -127,7 +127,7 @@
 
   /* hero */
   .swiper-slide-1 {
-    background-image: url('../images/slider-1-tab.jpg');
+    background-image: url('../images/slider-1-tab.webp');
   }
 
   .hero__content {
@@ -406,7 +406,7 @@
   }
 
   .swiper-slide-1 {
-    background-image: url(../images/slider-1-mob.jpg);
+    background-image: url(../images/slider-1-mob.webp);
   }
 
   .swiper-pagination {
@@ -539,8 +539,6 @@
 
   .card__img {
     margin-bottom: 8px;
-    min-height: 200px;
-    background-image: url("../images/card-img-mob.jpg");
   }
 
   .card__content {
@@ -646,5 +644,12 @@
   .social__link .icon {
     width: 40px;
     height: 40px;
+  }
+}
+
+@media (max-width: 360px) {
+  .card__img {
+    min-height: 200px;
+    background-image: url("../images/card-img-mob.webp");
   }
 }
