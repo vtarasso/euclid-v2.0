@@ -231,6 +231,10 @@
     padding: 7px 0;
   }
 
+  .nav {
+    top: 59px;
+  }
+
   /* hero */
   .hero__content {
     padding: 163px 42px;
@@ -367,6 +371,19 @@
 
   .card__btn {
     color: var(--main-orange);
+    transition: color 0.3s ease-in-out;
+  }
+
+  .card__btn:focus {
+    color: var(--light-color);
+  }
+
+  .card__btn:hover {
+    color: var(--light-color);
+  }
+
+  .card__btn:active {
+    color: var(--light-color);
   }
 
   .card__content {
@@ -397,6 +414,15 @@
 
   .header__logo {
     width: 110px;
+  }
+
+  .nav {
+    top: 53px;
+  }
+
+  .search-form__input {
+    width: 250px;
+    font-size: 1.4rem;
   }
 
   /* hero */
@@ -495,12 +521,6 @@
   .stages__content {
     gap: 20px;
   }
-
-
-
-  /* .stages__info {
-    min-height: 792px;
-  } */
 
   .stages__subtitle {
     margin-bottom: 12px;
@@ -648,6 +668,17 @@
 }
 
 @media (max-width: 360px) {
+  .search-form__input {
+    margin-right: 8px;
+    width: 200px;
+  }
+
+  .search-form {
+    right: 50%;
+    padding: 16px 13px 16px 20px;
+    transform: translateX(50%);
+  }
+
   .card__img {
     min-height: 200px;
     background-image: url("../images/card-img-mob.webp");
